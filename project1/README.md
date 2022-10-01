@@ -60,3 +60,36 @@ należy doładować wehikuł w znalezionym rozwiązaniu. W drugim wierszu wyjśc
 kolejnych skrzyżowań na znalezionej trasie. W trzecim wierszu wyjścia należy wypisać podciąg skrzyżowań na
 znalezionej trasie, na których należy doładować wehikuł. Jeśli nie ma doładowań, należy wypisać pusty wiersz.
 Jeśli istnieje wiele poprawnych rozwiązań, wypisz dowolne z nich.
+
+### Przykład
+
+Dla danych wejściowych:
+```
+7 2 5
+5 7 0 2 1
+9 9
+1 2
+6 7
+3 7
+8 9
+2 6
+1 5
+3 8
+7 8
+3 6
+0 3 4 3 2 3 5 7 4
+```
+Niepoprawnym wynikiem jest:
+```
+6 3 3
+1 2 6 3 8 9
+1 3 9
+```
+
+bo doładowanie o 0 na skrzyżowaniu 1 skutkuje zabronioną wartością pojemności, 7.\
+Poprawnym wynikiem jest:
+```
+6 3 2
+1 2 6 7 8 9
+7 9
+```
